@@ -1,0 +1,103 @@
+
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>테이블</title>
+		<link rel="stylesheet" type="text/css" href="include/css/base.css" />
+		<link rel="stylesheet" type="text/css" href="include/css/sub.css" />
+		<script src="include/js/vendor/jquery-3.3.1.min.js"></script><!-- 제이쿼리 최신버젼 사용하기 -->
+		<script src="include/js/vendor/prefixfree.min.js"></script><!-- css3 통합 처리기  -webkit-, -ms- 등 -->
+		<script src="include/js/main.js"></script>
+		
+		<!-- 스타일 -->
+		<style>
+            section.wrap {padding:50px;}
+			.h1_tit {display: inline-block; padding-bottom:30px; font-size:22px; color:#000; border-bottom:1px solid #333;}
+            .h1_tit em {font-weight:bold;}
+            .hover_wrap {padding:150px 0; text-align: center; /*background:#f6f6f6*/}
+			.hover_wrap h2 {font-size:50px; font-weight:300; color:#000; }
+            
+            /* 테이블2 */
+            .tb_default2 {width:100%; border-top:1px solid #1a1a1a; border-bottom:1px solid #1a1a1a;}
+            .tb_default2 caption {display: none}
+            .tb_default2 th {padding:20px 0; font-size:15px; font-weight:normal; color:#000; border-bottom:1px solid #dbdbdb;}
+            .tb_default2 td {padding:20px 0; font-size:14px; text-align: center; border-bottom:1px solid #f1f1f1;}
+            .tb_default2 td.title {position:relative; padding:0 30px; text-align: left}
+            .tb_default2 td.title a {display: inline-block; width:515px;}
+            .home_table td.title a {width:auto; font-weight:normal;}
+            .home_table td.title a:hover {text-decoration: underline;}
+            .tb_default2 tr:last-child td {border-bottom:none;}
+            .tb_default2 tr.tfoot td {padding-right:30px; font-size:15px; text-align: right; background: #f7f7f7; border-bottom:1px dashed #c0c0c0;}
+            .tb_default2 tr.tfoot td span.line {padding-right:15px; margin-right:10px; background: url(/include/img/line.png) right center no-repeat;}
+            .tb_default2 tr.tfoot td em {font-weight:bold;}
+            .title a {color: #000;font-weight: bold !important;}
+		</style>
+		
+		<!-- 스크립트 -->
+		<script>
+			
+		</script>
+	</head>
+
+	<body>
+        <section class="wrap">
+			<h1 class="h1_tit">Example.1 - <em>TABLE</em></h1>
+            <article class="hover_wrap">
+				<h2>TABLE</h2>
+                <table class="tb_default2 home_table mt60">
+                    <caption>주문/배송 내역</caption>
+                    <colgroup>
+                        <col style="width:20%"><col style="width:40%"><col style="width:15%"><col style="width:10%"><col style="width:15%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>주문일/주문번호</th>
+                            <th>상품정보</th>
+                            <th>결제금액</th>
+                            <th>진행상태</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="title">
+                                <a href="/service/sub_order/order_view.asp?suid=98703">
+                                    2022.01.11<br>220111_000014S192
+                                </a>
+                            </td>
+                            <td class="my_order">(공용) 시그니처 겨울 기모 웜 후드 집업</td>
+                            <td class="price"><em>34,800</em>원</td>
+                            <td>주문취소</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td class="title">
+                                <a href="/service/sub_order/order_view.asp?suid=98703">
+                                    2022.01.11<br>220111_000014S192
+                                </a>
+                            </td>
+                            <td class="my_order">(공용) 시그니처 겨울 기모 웜 후드 집업</td>
+                            <td class="price"><em>34,800</em>원</td>
+                            <td>주문취소</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td class="title">
+                                <a href="/service/sub_order/order_view.asp?suid=98703">
+                                    2022.01.11<br>220111_000014S192
+                                </a>
+                            </td>
+                            <td class="my_order">(공용) 시그니처 겨울 기모 웜 후드 집업</td>
+                            <td class="price"><em>34,800</em>원</td>
+                            <td>주문취소</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+		</section>
+	</body>
+	</html>
